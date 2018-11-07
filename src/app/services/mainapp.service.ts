@@ -105,7 +105,7 @@ export class MainService {
   getGlobalNetConfig(){
     if (!this.getCookie("netsConf")){
       this.eosConfig.chainId = "aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906";
-      this.eosConfig.httpEndpoint = "http://bp.cryptolions.io";
+      this.eosConfig.httpEndpoint = "http://umb1st.umba.la";
       return this.WINDOW.Eos(this.eosConfig);
     }
       let cookie = JSON.parse(this.getCookie("netsConf"));
