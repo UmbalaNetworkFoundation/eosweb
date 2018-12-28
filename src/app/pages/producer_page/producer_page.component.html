@@ -23,7 +23,7 @@
           <strong class="block-info-header">Votes:</strong>
         </div>
         <div class="col-sm-9">
-          <strong>{{ mainElement?.rate?.toLocaleString() }} % <small>/ {{ mainElement?.total_votes?.toLocaleString() }} SYS</small></strong>
+          <strong>{{ mainElement?.rate?.toLocaleString() }} % <small>/ {{ mainElement?.total_votes?.toLocaleString() }} UMB</small></strong>
         </div>
       </div>
 
@@ -41,7 +41,7 @@
           <strong class="block-info-header">Rewards:</strong>
         </div>
         <div class="col-sm-9">
-          <strong><small>{{ mainElement?.rewards?.toLocaleString() }} SYS</small></strong>
+          <strong><small>{{ mainElement?.rewards?.toLocaleString() }} UMB</small></strong>
         </div>
       </div>
 
@@ -97,7 +97,7 @@
           <span *ngFor="let voter of voters?.voters">
             <strong *ngIf="voter?.currency !== 'EOS'" class="small-tokens">
               <a [routerLink]="['/account', voter?.act?.data?.voter ]" class="color-green">{{ voter?.act?.data?.voter }}</a>
-              <small> stake </small> - <strong>{{ (voter?.stake) ? voter?.stake?.toLocaleString() : 0 }} SYS</strong>
+              <small> stake </small> - <strong>{{ (voter?.stake) ? voter?.stake?.toLocaleString() : 0 }} UMB</strong>
             </strong>
           </span>
         </div>
